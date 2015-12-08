@@ -1,0 +1,26 @@
+{
+  "name": "polyserve",
+  "version": "0.4.0",
+  "description": "A simple dev server for bower components",
+  "license": "BSD-3-Clause",
+  "repository": "PolymerLabs/polyserve",
+  "main": "main.js",
+  "bin": {
+    "polyserve": "bin/polyserve"
+  },
+  "scripts": {
+    "start": "./bin/polyserve"
+  },
+  "keywords": [
+    "polymer",
+    "polyserve"
+  ],
+  "dependencies": {
+    "express": "^4.8.5",
+    "find-port": "^1.0.1",
+    "minimist": "^1.1.1",
+    "open": "0.0.5",
+    "resolve": "^1.0.0",
+    "send": "^0.10.1"
+  }
+}

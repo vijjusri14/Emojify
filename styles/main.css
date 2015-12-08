@@ -1,0 +1,167 @@
+/*
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+body {
+  background: #fafafa;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #535353;
+  margin: 0px;
+  padding: 50px;
+  overflow: auto;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.love {
+    display: inline-block;
+    font-size: 1.4em;
+    position: relative;
+    top: .2em;
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    transform: scale(.9);
+    -webkit-animation: love .5s infinite linear alternate-reverse;
+    -moz-animation: love .5s infinite linear alternate-reverse;
+    animation: love .5s infinite linear alternate-reverse;
+}
+
+@-webkit-keyframes love {
+    to { -webkit-transform: scale(1.2); }
+}
+
+@-moz-keyframes love {
+    to { -moz-transform: scale(1.2); }
+}
+
+@keyframes love {
+    to { transform: scale(1.2); }
+}
+
+@-webkit-keyframes toy {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes toy {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.toy {
+  -webkit-animation: toy 2s linear infinite;
+  -moz-animation: toy 2s linear infinite;
+  -ms-animation: toy 2s linear infinite;
+  -o-animation: toy 2s linear infinite;
+  animation: toy 2s linear infinite;
+}
+
+@keyframes winky {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.winky {
+  -webkit-animation: winky 1s ease-in-out;
+  -moz-animation: winky 1s ease-in-out;
+  -ms-animation: winky 1s ease-in-out;
+  -o-animation: winky 1s ease-in-out;
+  animation: winky 1s ease-in-out;
+}
+
+.winky:active {
+  -webkit-animation: winky 1s ease-in-out;
+  -moz-animation: winky 1s ease-in-out;
+  -ms-animation: winky 1s ease-in-out;
+  -o-animation: winky 1s ease-in-out;
+  animation: winky 1s ease-in-out;
+}
+
+@keyframes winky-rev {
+    0% {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.winky-rev {
+  -webkit-animation: winky-rev 1s ease-in-out;
+  -moz-animation: winky-rev 1s ease-in-out;
+  -ms-animation: winky-rev 1s ease-in-out;
+  -o-animation: winky-rev 1s ease-in-out;
+  animation: winky-rev 1s ease-in-out;
+}
+
+.winky-rev:active {
+  -webkit-animation: winky-rev 1s ease-in-out;
+  -moz-animation: winky-rev 1s ease-in-out;
+  -ms-animation: winky-rev 1s ease-in-out;
+  -o-animation: winky-rev 1s ease-in-out;
+  animation: winky-rev 1s ease-in-out;
+}
+
+@media (max-width: 500px) {
+    body {
+      padding: 20px;
+    }
+  }
+
+a:link, a:visited,h2,h3 {
+    color: #FF6677;
+    text-decoration: none;
+  }
+
+textarea:focus {
+    outline: none !important;
+}
