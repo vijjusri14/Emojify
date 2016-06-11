@@ -22,7 +22,7 @@
         "sizes": "384x384",
         "type": "image/png"
       }],
-  "start_url": "/#!/",
+  "start_url": "/Emojify",
   "background_color": "#FF6677",
   "display": "standalone",
   "theme_color": "#FF334B"
